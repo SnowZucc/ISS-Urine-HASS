@@ -81,7 +81,7 @@ class ISSLiveTelemetrySensor(
         self.entity_description = description
         self._attr_unique_id = f"{DOMAIN}_{description.public_pui.lower()}"
         self._attr_device_info = DeviceInfo(
-            identifiers={(DOMAIN, "issurine")},
+            identifiers={(DOMAIN, "isslive")},
             name="ISS urine Telemetry",
             manufacturer="NASA / Lightstreamer",
             entry_type=DeviceEntryType.SERVICE,
