@@ -1,0 +1,6 @@
+{
+  "name": "ISS Live Telemetry",
+  "render_readme": true,
+  "domains": ["sensor"],
+  "homeassistant": "2026.6.1"
+}

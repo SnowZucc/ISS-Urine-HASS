@@ -1,0 +1,16 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Télémétrie urine dans l'ISS",
+        "description": "Affiche l'état du réservoir d'urine de l'ISS, la pression et température cabine, etc... Extrêmement utile pour... des fins scientifiques",
+        "data": {
+          "scan_interval": "Intervalle de mise à jour en secondes"
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "La télémétrie ISS Live est déjà configurée."
+    }
+  }
+}
