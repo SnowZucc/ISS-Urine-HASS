@@ -1,6 +1,6 @@
 {
-  "domain": "isslive",
-  "name": "ISS Live Telemetry",
+  "domain": "issurine",
+  "name": "ISS urine Telemetry",
   "codeowners": [],
   "config_flow": true,
   "documentation": "https://github.com/SnowZucc/ISS-Urine-HASS",
@@ -9,5 +9,5 @@
   "issue_tracker": "https://github.com/SnowZucc/ISS-Urine-HASS/issues",
   "requirements": [],
   "single_config_entry": true,
-  "version": "0.1.0"
+  "version": "0.1.1"
 }

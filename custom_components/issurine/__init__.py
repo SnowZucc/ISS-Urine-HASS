@@ -1,4 +1,4 @@
-"""Home Assistant integration for ISS Live Telemetry."""
+"""Home Assistant integration for ISS urine Telemetry."""
 
 from __future__ import annotations
 
@@ -20,7 +20,7 @@ type ISSLiveConfigEntry = ConfigEntry[ISSLiveDataUpdateCoordinator]
 
 
 async def async_setup_entry(hass: HomeAssistant, entry: ISSLiveConfigEntry) -> bool:
-    """Set up ISS Live Telemetry from a config entry."""
+    """Set up ISS urine Telemetry from a config entry."""
 
     scan_interval = int(entry.data.get(CONF_SCAN_INTERVAL, DEFAULT_SCAN_INTERVAL))
     client = ISSLiveClient(async_get_clientsession(hass))
@@ -38,7 +38,7 @@ async def async_setup_entry(hass: HomeAssistant, entry: ISSLiveConfigEntry) -> b
 
 
 async def async_unload_entry(hass: HomeAssistant, entry: ISSLiveConfigEntry) -> bool:
-    """Unload ISS Live Telemetry."""
+    """Unload ISS urine Telemetry."""
 
     return await hass.config_entries.async_unload_platforms(entry, PLATFORMS)
 
@@ -60,7 +60,7 @@ class ISSLiveDataUpdateCoordinator(
         super().__init__(
             hass,
             _LOGGER,
-            name="ISS Live Telemetry",
+            name="ISS urine Telemetry",
             update_interval=update_interval,
         )
         self.client = client

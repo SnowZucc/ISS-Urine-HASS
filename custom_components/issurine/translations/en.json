@@ -1,0 +1,24 @@
+{
+  "title": "ISS urine Telemetry",
+  "config": {
+    "flow_title": "ISS urine Telemetry",
+    "initiate_flow": {
+      "user": "Set up ISS urine Telemetry"
+    },
+    "step": {
+      "user": {
+        "title": "ISS urine Telemetry",
+        "description": "Displays the status of the ISS urine tank, cabin pressure and temperature, etc... Extremely useful for... scientific purposes",
+        "data": {
+          "scan_interval": "Update interval in seconds"
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "ISS urine Telemetry is already configured."
+    },
+    "create_entry": {
+      "default": "Displays the status of the ISS urine tank, cabin pressure and temperature, etc... Extremely useful for... scientific purposes"
+    }
+  }
+}

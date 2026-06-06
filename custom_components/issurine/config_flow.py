@@ -1,4 +1,4 @@
-"""Config flow for ISS Live Telemetry."""
+"""Config flow for ISS urine Telemetry."""
 
 from __future__ import annotations
 
@@ -19,7 +19,7 @@ from .const import (
 
 
 class ISSLiveConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
-    """Handle an ISS Live Telemetry config flow."""
+    """Handle an ISS urine Telemetry config flow."""
 
     VERSION = 1
 
@@ -32,7 +32,7 @@ class ISSLiveConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
         self._abort_if_unique_id_configured()
 
         if user_input is not None:
-            return self.async_create_entry(title="ISS Live Telemetry", data=user_input)
+            return self.async_create_entry(title="ISS urine Telemetry", data=user_input)
 
         return self.async_show_form(
             step_id="user",

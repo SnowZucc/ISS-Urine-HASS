@@ -1,4 +1,4 @@
-"""Sensors for ISS Live Telemetry."""
+"""Sensors for ISS urine Telemetry."""
 
 from __future__ import annotations
 
@@ -39,7 +39,7 @@ class ISSLiveSensorEntityDescription(SensorEntityDescription):
 async def async_setup_entry(
     hass, entry: ISSLiveConfigEntry, async_add_entities
 ) -> None:
-    """Set up ISS Live Telemetry sensors."""
+    """Set up ISS urine Telemetry sensors."""
 
     coordinator = entry.runtime_data
     async_add_entities(
@@ -83,8 +83,8 @@ class ISSLiveTelemetrySensor(
         self.entity_description = description
         self._attr_unique_id = f"{DOMAIN}_{description.public_pui.lower()}"
         self._attr_device_info = DeviceInfo(
-            identifiers={(DOMAIN, "isslive")},
-            name="ISS Live Telemetry",
+            identifiers={(DOMAIN, "issurine")},
+            name="ISS urine Telemetry",
             manufacturer="NASA / Lightstreamer",
             entry_type=DeviceEntryType.SERVICE,
         )

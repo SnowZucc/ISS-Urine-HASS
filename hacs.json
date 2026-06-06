@@ -1,5 +1,5 @@
 {
-  "name": "ISS Live Telemetry",
+  "name": "ISS urine Telemetry",
   "render_readme": true,
   "domains": ["sensor"],
   "homeassistant": "2026.6.1"

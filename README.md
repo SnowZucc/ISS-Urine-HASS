@@ -1,4 +1,4 @@
-# ISS Live Telemetry for Home Assistant
+# ISS urine Telemetry for Home Assistant
 
 Custom Home Assistant integration for public ISS telemetry exposed by the
 Lightstreamer `ISSLIVE` adapter.
@@ -57,13 +57,13 @@ The exposed list and full reference dictionary are in:
 
 1. In HACS, add `https://github.com/SnowZucc/ISS-Urine-HASS` as a custom repository.
 2. Select category `Integration`.
-3. Install `ISS Live Telemetry`.
+3. Install `ISS urine Telemetry`.
 4. Restart Home Assistant.
 5. Add the integration from **Settings > Devices & services > Add integration**.
 
 ## Manual Installation
 
-Copy `custom_components/isslive` into your Home Assistant
+Copy `custom_components/issurine` into your Home Assistant
 `custom_components` directory, then restart Home Assistant.
 
 ## Version Notes
