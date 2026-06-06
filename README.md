@@ -18,6 +18,14 @@ and understandable in Home Assistant. It creates 25 `sensor` entities.
 The full ISSLive dictionary has 298 public telemetry symbols, but most are raw
 engineering channels and are kept only as reference data in `data/`.
 
+## HACS Installation
+
+1. In HACS, add `https://github.com/SnowZucc/ISS-Urine-HASS` as a custom repository.
+2. Select category `Integration`.
+3. Install `ISS urine Telemetry`.
+4. Restart Home Assistant.
+5. Add the integration from **Settings > Devices & services > Add integration**.
+
 Exposed sensors:
 
 - `AIRLOCK000049` - Crewlock Pressure
@@ -46,30 +54,10 @@ Exposed sensors:
 - `USLAB000081` - Attitude Maneuver In Progress status
 - `USLAB000086` - ISS Station Mode
 
-The exposed list and full reference dictionary are in:
-
-- [`data/isslive_exposed_sensors.md`](data/isslive_exposed_sensors.md)
-- [`data/isslive_human_readable.md`](data/isslive_human_readable.md)
-- [`data/isslive_telemetry.csv`](data/isslive_telemetry.csv)
-- [`data/isslive_telemetry.json`](data/isslive_telemetry.json)
-
-## HACS Installation
-
-1. In HACS, add `https://github.com/SnowZucc/ISS-Urine-HASS` as a custom repository.
-2. Select category `Integration`.
-3. Install `ISS urine Telemetry`.
-4. Restart Home Assistant.
-5. Add the integration from **Settings > Devices & services > Add integration**.
-
 ## Manual Installation
 
 Copy `custom_components/issurine` into your Home Assistant
 `custom_components` directory, then restart Home Assistant.
-
-## Version Notes
-
-Metadata was checked against current Home Assistant/HACS documentation on
-2026-06-07. `hacs.json` declares Home Assistant `2026.6.1`.
 
 ## Data Source
 

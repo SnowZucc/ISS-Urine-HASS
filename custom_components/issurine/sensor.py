@@ -11,7 +11,7 @@ from homeassistant.helpers.device_registry import DeviceEntryType
 from homeassistant.helpers.entity import DeviceInfo
 from homeassistant.helpers.update_coordinator import CoordinatorEntity
 
-from . import ISSLiveConfigEntry, ISSLiveDataUpdateCoordinator
+from . import ISSLiveDataUpdateCoordinator
 from .const import (
     ATTR_CALIBRATED_DATA,
     ATTR_DISCIPLINE,
@@ -36,12 +36,10 @@ class ISSLiveSensorEntityDescription(SensorEntityDescription):
     numeric: bool = False
 
 
-async def async_setup_entry(
-    hass, entry: ISSLiveConfigEntry, async_add_entities
-) -> None:
+async def async_setup_entry(hass, entry, async_add_entities) -> None:
     """Set up ISS urine Telemetry sensors."""
 
-    coordinator = entry.runtime_data
+    coordinator = hass.data[DOMAIN][entry.entry_id]
     async_add_entities(
         ISSLiveTelemetrySensor(
             coordinator,
