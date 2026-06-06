@@ -7,7 +7,6 @@ from typing import Any
 import voluptuous as vol
 
 from homeassistant import config_entries
-from homeassistant.data_entry_flow import FlowResult
 
 from .const import (
     CONF_SCAN_INTERVAL,
@@ -18,14 +17,12 @@ from .const import (
 )
 
 
-class ISSLiveConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
+class ISSUrineConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
     """Handle an ISS urine Telemetry config flow."""
 
     VERSION = 1
 
-    async def async_step_user(
-        self, user_input: dict[str, Any] | None = None
-    ) -> FlowResult:
+    async def async_step_user(self, user_input: dict[str, Any] | None = None):
         """Create the ISSLive config entry."""
 
         await self.async_set_unique_id(DOMAIN)
