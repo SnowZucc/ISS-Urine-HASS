@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from datetime import timedelta
 
-DOMAIN = "isslive"
+DOMAIN = "issurine"
 
 DEFAULT_SCAN_INTERVAL = 60
 MIN_SCAN_INTERVAL = 30
