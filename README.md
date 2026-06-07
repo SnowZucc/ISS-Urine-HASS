@@ -18,6 +18,8 @@ and understandable in Home Assistant. It creates 25 `sensor` entities.
 The full ISSLive dictionary has 298 public telemetry symbols, but most are raw
 engineering channels and are kept only as reference data in `data/`.
 
+![ISS urine Telemetry screenshot](docs/screenshot-20260607-123201.png)
+
 ## HACS Installation
 
 1. In HACS, add `https://github.com/SnowZucc/ISS-Urine-HASS` as a custom repository.
